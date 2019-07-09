@@ -9,8 +9,7 @@ import { ServerService } from '../server.service';
 })
 export class SearchComponent implements OnInit {
   @Output() public item = new EventEmitter();
-  @Output() public find = new EventEmitter();
-  // find: string;
+  find: string;
   response: any;
   constructor(private serv: ServerService) { }
 

@@ -7,7 +7,6 @@ import { ServerService } from '../server.service';
 })
 export class PlaybuttonComponent implements OnInit {
   @Output() public item = new EventEmitter();
-  @Input() public find;
   @Input() public item1;
   playresponse: any;
   constructor(private serv: ServerService) { }
